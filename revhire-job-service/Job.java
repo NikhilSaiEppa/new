@@ -7,7 +7,7 @@ public class Job {
     private String logoLink;
     private String createdOn;
     private String designation;
-    private String location;
+    private String location; 
     private String description;
     private List<String> skills;
 
