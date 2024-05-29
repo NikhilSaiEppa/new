@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: newp2 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: newp2
+  template:
+    metadata:
+      labels:
+        app: newp2 
+    spec:
+      containers:
+        - name: newp2 
+          image: containerp2.azurecr.io/newp2
+          ports:
+          - containerPort: 8000
